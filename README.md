@@ -1,5 +1,6 @@
-# AhjussiCcchen
+[![Build Status](https://travis-ci.org/ccchen1991/ahjussi-ccchen.svg?branch=master)](https://travis-ci.org/ccchen1991/ahjussi-ccchen)
 
+# Ahjussi CCChen 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
 
 ## Development server
