@@ -1,3 +1,8 @@
+sudo: required
+
+addons:
+  chrome: stable
+
 language: node_js
 node_js:
   - "10.9"
@@ -7,14 +12,18 @@ branches:
     - master
 
 before_script:
-  - npm install -g firebase-tools
   - npm install -g @angular/cli
 
 script:
+  - npm install
+  - npm run test-headless
   - ng build --prod
 
-after_success:
-  - firebase deploy --token $FIREBASE_TOKEN
+deploy:
+  skip_cleanup: true
+  provider: firebase
+  token:
+    secure: $FIREBASE_TOKEN
 
 notifications:
   email:
