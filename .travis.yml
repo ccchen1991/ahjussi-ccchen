@@ -16,6 +16,7 @@ before_script:
 
 script:
   - npm install
+  - npm run test-headless
   - ng build --prod
 
 deploy:
