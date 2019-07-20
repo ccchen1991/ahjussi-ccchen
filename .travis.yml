@@ -17,9 +17,7 @@ before_script:
 
 script:
   - npm run test-headless
-
-after_success:
-  - if [ "$TRAVIS_BRANCH" == "master" ]; then npm run build;
+  - npm run build
 
 deploy:
   skip_cleanup: true
