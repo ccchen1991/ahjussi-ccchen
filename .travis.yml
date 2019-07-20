@@ -13,11 +13,14 @@ branches:
 
 before_script:
   - npm install -g @angular/cli
+  - npm install
 
 script:
-  - npm install
   - npm run test-headless
-  - ng build --prod
+
+after_success:
+  - if [ "$TRAVIS_BRANCH" == "master" ]; then 
+    npm run build
 
 deploy:
   skip_cleanup: true
