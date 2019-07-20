@@ -5,19 +5,18 @@ addons:
 
 language: node_js
 node_js:
-  - "10.9"
-
-branches:
-  only:
-    - master
+  - "stable"
 
 before_script:
   - npm install -g @angular/cli
 
 script:
-  - npm install
-  - npm run test-headless
-  - ng build --prod
+  - npm run test
+  - npm run build
+
+branches:
+  only:
+    - master
 
 deploy:
   skip_cleanup: true
