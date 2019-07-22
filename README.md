@@ -1,4 +1,4 @@
-# Ahjussi CCChen [![Build Status](https://travis-ci.org/ccchen1991/ahjussi-ccchen.svg?branch=master)](https://travis-ci.org/ccchen1991/ahjussi-ccchen)
+# Ahjussi CCChen [![Build Status](https://travis-ci.org/ccchen1991/ahjussi-ccchen.svg?branch=master)](https://travis-ci.org/ccchen1991/ahjussi-ccchen) [![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=ccchen1991_ahjussi-ccchen&metric=alert_status)](https://sonarcloud.io/dashboard?id=ccchen1991_ahjussi-ccchen)
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
 
 ## Development server
