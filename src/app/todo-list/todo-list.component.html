@@ -1,0 +1,15 @@
+<table style="width:100%">
+    <tr>
+      <th>Id</th>
+      <th>Description</th>
+      <th>IsCompleted</th>
+    </tr>
+    <tr *ngFor="let todo of todoList" >
+      <td>{{ todo.id }}</td>
+      <td>{{ todo.description }}</td>
+      <td>{{ todo.isCompleted ? 'Yes' : 'No' }}</td> 
+      <td>
+      <a [routerLink]="['/todo', todo.id]">Go to details</a>
+      </td>
+    </tr>
+</table>
