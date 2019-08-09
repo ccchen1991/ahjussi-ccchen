@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
 
 import { Todo } from '../todo.model';
 import { TodoService } from '../todo.service';
@@ -13,7 +14,7 @@ export class TodoDetailComponent implements OnInit {
 
   todo: Todo;
 
-  constructor(private todoService: TodoService, private route: ActivatedRoute) { }
+  constructor(private todoService: TodoService, private route: ActivatedRoute, private location: Location) { }
 
   ngOnInit() {
     const id = +this.route.snapshot.paramMap.get('id')
@@ -25,5 +26,9 @@ export class TodoDetailComponent implements OnInit {
       console.log(todo);
       this.todo = todo;
     });
+  }
+
+  cancel() {
+    this.location.back();
   }
 }

@@ -1,0 +1,52 @@
+.navbar-local {
+    padding: 5px;
+    background: #4156a3;
+}
+
+.navbar-brand-local {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.navbar-brand-logo-div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.navbar-brand-logo {
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: white;
+}
+
+.navbar-brand-title-div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 8pt;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+#hamburger {
+    border: none;
+}
+
+.body-container {
+    margin-top: 100px;
+    margin-left:20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
