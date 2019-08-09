@@ -1,8 +1,27 @@
-<div style="text-align:center">
-  <h1>
-    Welcome back {{ title }}!
-  </h1>
-  <h2><a [routerLink] = "'/todos'">Your todo list</a></h2>
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-local">
+  <div class="navbar-brand navbar-brand-local">
+    <div class="navbar-brand-logo-div">
+      <img src="assets/img/logo.png" class="navbar-brand-logo" />
+    </div>
+    <div class="navbar-brand-title-div">
+      {{title}}
+    </div>
+  </div>
+  <button id="hamburger" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu"
+    aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbar-menu">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" [routerLink] = "'/todos'">Todo list</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">About Me</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="body-container">
+    <router-outlet></router-outlet>
 </div>
-
-<router-outlet></router-outlet>

@@ -1,10 +1,10 @@
-
-<div *ngIf="todo">
-    <h1> Todo # {{todo.id}}</h1>
-    <p>
-    Description: {{todo.description}} 
-    </p>
-    <p>
-    isCompleted: {{todo.isCompleted ? 'Yes' : 'No'}}
-    </p>
+<div class="card" *ngIf="todo">
+    <div class="card-header">
+        Todo # {{todo.id}}
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">{{todo.description}}</h5>
+        <p class="card-text">{{todo.isCompleted ? 'Done' : 'To do'}}</p>
+        <button class="btn btn-link" (click)="cancel()">Go Back</button>
+    </div>
 </div>
