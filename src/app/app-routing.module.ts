@@ -1,12 +1,20 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { TodoListComponent } from './todo-list/todo-list.component';
-import { TodoDetailComponent } from './todo-detail/todo-detail.component';
-
 const routes: Routes = [
-  { path: 'todos', component: TodoListComponent },
-  { path: 'todo/:id', component: TodoDetailComponent }
+  {
+    path: 'todos',
+    loadChildren: () => import('./modules/todo/todo.module').then(m => m.TodoModule)
+  },
+  {
+    path: 'blogs',
+    loadChildren: () => import('./modules/blog/blog.module').then(m => m.BlogModule)
+  },
+  {
+    path: '',
+    redirectTo: '',
+    pathMatch: 'full'
+  }
 ];
 
 @NgModule({

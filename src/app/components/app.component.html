@@ -1,8 +1,5 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-local">
   <div class="navbar-brand navbar-brand-local">
-    <div class="navbar-brand-logo-div">
-      <img src="assets/img/logo.png" class="navbar-brand-logo" />
-    </div>
     <div class="navbar-brand-title-div">
       {{title}}
     </div>
@@ -14,7 +11,10 @@
   <div class="collapse navbar-collapse" id="navbar-menu">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item">
-        <a class="nav-link" [routerLink] = "'/todos'">Todo list</a>
+        <a class="nav-link" [routerLink] = "'/todos'">Todo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink] = "'/blogs'">Blog</a>
       </li>
       <li class="nav-item">
         <a class="nav-link">About Me</a>
