@@ -8,10 +8,12 @@ import { BackendService } from './services/backend.service';
 import { TodoRoutingModule } from './todo-routing.module';
 
 import { TodoListComponent } from './components/todo-list/todo-list.component';
+import { TodoDetailComponent } from './components/todo-detail/todo-detail.component';
 
 @NgModule({
   declarations: [
-    TodoListComponent
+    TodoListComponent,
+    TodoDetailComponent
   ],
   imports: [
     CommonModule,
