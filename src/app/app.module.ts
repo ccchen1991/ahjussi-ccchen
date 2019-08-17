@@ -5,7 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { TodoModule } from './modules/todo/todo.module';
 import { BlogModule } from './modules/blog/blog.module';
-import { AppComponent } from './components/app.component';
+import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
