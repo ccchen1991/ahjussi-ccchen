@@ -1,0 +1,16 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th *ngFor="let columnSetting of columnSettings" [ngStyle]="columnSetting.style">
+                {{ columnSetting.header }}
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let record of records">
+            <td *ngFor="let columnSetting of columnSettings">
+                {{ record[columnSetting.key] }}
+            </td>
+        </tr>
+    </tbody>
+</table>

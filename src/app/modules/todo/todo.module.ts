@@ -6,6 +6,7 @@ import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { BackendService } from './services/backend.service';
 
 import { TodoRoutingModule } from './todo-routing.module';
+import { SharedModule } from '../shared/shared.module';
 
 import { TodoListComponent } from './components/todo-list/todo-list.component';
 import { TodoDetailComponent } from './components/todo-detail/todo-detail.component';
@@ -17,6 +18,7 @@ import { TodoDetailComponent } from './components/todo-detail/todo-detail.compon
   ],
   imports: [
     CommonModule,
+    SharedModule,
     TodoRoutingModule,
     InMemoryWebApiModule.forRoot(BackendService)
   ]

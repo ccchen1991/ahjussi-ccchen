@@ -1,17 +1,7 @@
-<div class="table-responsive-sm">
+<div class="table-responsive-sm" *ngIf="todoList?.length">
     <h2>Todo list</h2>
-    <table class="table">
-        <tr>
-            <th scope="col">#</th>
-            <th>Description</th>
-            <th>Status</th>
-            <th></th>
-        </tr>
-        <tr *ngFor="let todo of todoList">
-            <td>{{ todo.id }}</td>
-            <td>{{ todo.description }}</td>
-            <td>{{ todo.isCompleted ? 'Done' : 'To do' }}</td>
-            <td><a [routerLink]="['/todo', todo.id]">Details</a></td>
-        </tr>
-    </table>
+    <app-table-layout 
+        [records]="todoList" 
+        [settings]="todoTableColumnSetting">
+    </app-table-layout>
 </div>
